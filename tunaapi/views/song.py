@@ -17,7 +17,7 @@ class SongView(ViewSet):
     
     def list(self, request):
         songs = Song.objects.all()
-        serializer = SongSerializer(songs, many=True)
+        serializer = SongSerializerShallow(songs, many=True)
         return Response(serializer.data)
         
 
@@ -28,3 +28,8 @@ class SongSerializer(serializers.ModelSerializer):
         model = Song
         fields = ('id', 'title', 'artist', 'album', 'length')
         depth = 1
+
+class SongSerializerShallow(serializers.ModelSerializer):
+    class Meta:
+        model = Song
+        fields = ('id', 'title', 'artist_id', 'album', 'length')
