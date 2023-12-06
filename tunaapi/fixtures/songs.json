@@ -1,0 +1,32 @@
+[
+  {
+    "model": "tunaapi.song",
+    "pk": 1,
+    "fields": {
+      "title": "Concierto de Aranjuez",
+      "artist": 3,
+      "album": "Sketches of Spain",
+      "length": 979
+    }
+  },
+  {
+    "model": "tunaapi.song",
+    "pk": 2,
+    "fields": {
+      "title": "There There (The Boney King of Nowhere)",
+      "artist": 1,
+      "album": "Hail to the Thief",
+      "length": 325
+    }
+  },
+  {
+    "model": "tunaapi.song",
+    "pk": 3,
+    "fields": {
+      "title": "ATLiens",
+      "artist": 2,
+      "album": "ATLiens",
+      "length": 230
+    }
+  }
+]
