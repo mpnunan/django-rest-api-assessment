@@ -22,5 +22,6 @@ class GenreView(ViewSet):
 
 
 class GenreSerializer(serializers.ModelSerializer):
-    model = Genre
-    fields = ('id', 'description')
+    class Meta:
+            model = Genre
+            fields = ('id', 'description')
