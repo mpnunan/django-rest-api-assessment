@@ -1,0 +1,50 @@
+[
+  {
+    "model": "tunaapi.songgenre",
+    "pk": 1,
+    "fields": {
+      "song": 1,
+      "genre": 1
+    }
+  },
+  {
+    "model": "tunaapi.songgenre",
+    "pk": 2,
+    "fields": {
+      "song": 1,
+      "genre": 2
+    }
+  },
+  {
+    "model": "tunaapi.songgenre",
+    "pk": 3,
+    "fields": {
+      "song": 1,
+      "genre": 3
+    }
+  },
+  {
+    "model": "tunaapi.songgenre",
+    "pk": 4,
+    "fields": {
+      "song": 2,
+      "genre": 1
+    }
+  },
+  {
+    "model": "tunaapi.songgenre",
+    "pk": 5,
+    "fields": {
+      "song": 2,
+      "genre": 2
+    }
+  },
+  {
+    "model": "tunaapi.songgenre",
+    "pk": 6,
+    "fields": {
+      "song": 2,
+      "genre": 3
+    }
+  }
+]
