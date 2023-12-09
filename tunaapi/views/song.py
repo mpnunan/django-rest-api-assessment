@@ -3,6 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from tunaapi.models import Song, Artist, SongGenre
+from .genre import GenreSerializer
 
 
 class SongView(ViewSet):
