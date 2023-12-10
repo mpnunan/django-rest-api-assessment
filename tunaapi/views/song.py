@@ -59,11 +59,6 @@ class SongSerializerShallow(serializers.ModelSerializer):
         model = Song
         fields = ('id', 'title', 'artist_id', 'album', 'length')
         
-# class SongGenreSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = SongGenre
-#         fields = ('genre',)
-#         depth = 1
 class SongDetailsSerializer(serializers.ModelSerializer):
     genres = GenreSerializer(many=True, read_only=True)
     class Meta:
