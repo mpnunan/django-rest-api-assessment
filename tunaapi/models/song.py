@@ -7,3 +7,6 @@ class Song(models.Model):
     artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
     album = models.CharField(max_length=50)
     length = models.IntegerField()
+    
+    def genres(self):
+        return [genre_song.genre for genre_song in self.genre_songs.all()]
